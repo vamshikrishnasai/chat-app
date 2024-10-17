@@ -66,11 +66,11 @@ io.on("connection", (socket) => {
 
         const { msg } = data; 
 
-        // if (!msg) {
-        //     console.error("Invalid message data:", data);
-        //     socket.emit("error", { message: "Invalid message format." });
-        //     return;
-        // }
+        if (!msg) {
+            console.error("Invalid message data:", data);
+            socket.emit("error", { message: "Invalid message format." });
+            return;
+        }
 
         
         const message = new Message({
