@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#messageContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+.sent {
+    text-align: right;
+    color: blue;
+    margin: 5px 0;
+}
+.received {
+    text-align: left;
+    color: green;
+    margin: 5px 0;
+}
+#messageForm {
+    display: flex;
+}
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+#sendBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: lightgreen;
+    outline:none;
+    border:none;
+    border-radius: 20px;
+}
+#clearBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#clearBtn:hover {
+    background-color: #d32f2f;
+}
